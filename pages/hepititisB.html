@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+<head>
+<meta name="description" content="Dynamic web development">
+<meta name="author" content="Aniruddha">
+<meta name="viewport" content="width=device-width initial-scale=1.0">
+<link href="../css/style_assign13.css" rel="stylesheet" type="text/css">
+<title>Hepatitis B Infected</title>
+</head>
+<body>
+<header>
+<h2 style="padding-top:35px;">Hepatitis B Pregnant Women Reporting</h2>
+</header>
+<section class="row">
+<nav class="nav_upper" class="col-12">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li style="margin-right:0px;"><a href="../index.html">Logout</a></li>
+  </ul>
+</nav>
+</section>
+
+<section class="row">
+  <nav class="col-3" id="side_nav">
+    <ul>
+      <li><a href="../pages/personal_info.html">Personal information</a></li>
+      <li><a href="../pages/riskfactor_info.html">Risk Factor Information</a></li>
+      <li><a href="../pages/Hepititisb.html">Hepatitis B Pregnant Women Reporting</a></li>
+      <li><a href="../pages/cong_syp.html">Congenital Syphilis Form</a></li>
+      <li style="border-bottom: none;"><a href="../pages/chlamydia.html">Chlamydia & Gonorrhea case reporting</a></li>
+    </ul>
+  </nav>
+<article class="col-9">
+  <article class="col-12">
+  <form action="pages/personal_info.html" method="POST" autocomplete="off">
+  <div class="reg">
+  <h2 style="border:1px solid black; width:80%; background-color:#000; color:#fff;">Hepatitis B Infected Pregnant Woman Reporting Form</h2>
+  <label for ="firstname">First name:</label>
+  <input type="text" id="firstname" name="firstname" placeholder="First name.."><br/>
+  <label for ="middlename">Middle name:</label>
+  <input type="text" id="middlename" name="middlename" placeholder="Middle name.."><br/>
+  <label for ="lastname">Last name:</label>
+  <input type="text" id="lastname" name="lastname" placeholder="Last name.."><br/>
+
+  <label for ="dob">Date of Birth:</label>
+  <input type="date" id="dob" name="dob"><br/>
+  <label for ="country">Country of Birth:</label>
+  <input list="country" required>
+  <datalist id="country" name="country">
+  <option> [Select one] </option>
+  <option value="al">Alabama</option>
+  <option value="ak">Alaska</option>
+  <option value="az">Arizona</option>
+  <option value="ar">Arkansas</option>
+  <option value="ca">California</option>
+  <option value="co">Colorado</option>
+  <option value="ct">Connecticut</option>
+  <option value="de">Delaware</option>
+  <option value="fl">Florida</option>
+  <option value="ga">Georgia</option>
+  <option value="hi">Hawaii</option>
+  <option value="id">Idaho</option>
+  <option value="il">Illinois</option>
+  <option value="in">Indiana</option>
+  </datalist><br/>
+
+  <label for ="language">Write primary language:</label>
+  <input type="text" id="language" name="language"><br/>
+
+  <label for="peraddress">Address:</label>
+  <textarea rows="2" cols="10" id="peraddress" name="peraddress"></textarea><br/>
+
+  <label for ="states">States:</label>
+  <input list="states" required>
+  <datalist id="states" name="states">
+  <option> [Select one] </option>
+  <option value="al">Alabama</option>
+  <option value="ak">Alaska</option>
+  <option value="az">Arizona</option>
+  <option value="ar">Arkansas</option>
+  <option value="ca">California</option>
+  <option value="co">Colorado</option>
+  <option value="ct">Connecticut</option>
+  <option value="de">Delaware</option>
+  <option value="fl">Florida</option>
+  <option value="ga">Georgia</option>
+  <option value="hi">Hawaii</option>
+  <option value="id">Idaho</option>
+  <option value="il">Illinois</option>
+  <option value="in">Indiana</option>
+  </datalist><br/>
+
+  <label for ="cities">Cities:</label>
+  <input list="cities" required>
+  <datalist id="cities" name="cities">
+  <option> [Select one] </option>
+  <option value="al">Alabama</option>
+  <option value="ak">Alaska</option>
+  <option value="az">Arizona</option>
+  <option value="ar">Arkansas</option>
+  <option value="ca">California</option>
+  <option value="co">Colorado</option>
+  <option value="ct">Connecticut</option>
+  <option value="de">Delaware</option>
+  <option value="fl">Florida</option>
+  <option value="ga">Georgia</option>
+  <option value="hi">Hawaii</option>
+  <option value="id">Idaho</option>
+  <option value="il">Illinois</option>
+  <option value="in">Indiana</option>
+  </datalist><br/>
+
+  <label for ="zipcode">Zip Code:</label>
+  <input type="text" name="zipcode" id="zipcode" maxlength="10" placeholder="Zip code.."><br/>
+  <label for ="contactnum">Contact Number:</label>
+  <input type="tel" name="contactnum" id="contactnum" placeholder="1234-567-8901" required><br/>
+
+  <label for ="Race">Race:</label>
+    <input type="checkbox" value="American" name="Race" id="American">
+    <label for ="American">American Indian/Alaskan Native</label>
+    <input type="checkbox" value="Asian" name="Race" id="Asian">
+    <label for ="Asian">Asian</label>
+    <input type="checkbox" value="African" name="Race" id="African">
+    <label for ="African">Black/African Am.</label>
+    <input type="checkbox" value="Native" name="Race" id="Native">
+    <label for ="Native">Native Hawaiian/Pacific Islander</label>
+    <input type="checkbox" value="White" name="Race" id="White">
+    <label for ="White">White</label>
+    <input type="checkbox" value="Unk" name="Race" id="Unk">
+    <label for ="Unk">Unk</label>
+    <input type="checkbox" value="Other" name="Race" id="Other">
+    <label for ="Other">Other</label><br/>
+
+    <label for ="insurance" required>Type of insurance:</label>
+    <input type="radio" value="Private" name="insurance" id="Private">
+    <label for ="Private">Private:</label>
+    <input type="radio" value="Medicaid" name="insurance" id="Medicaid">
+    <label for ="Medicaid">Medicaid:</label>
+    <input type="radio" value="Medicare" name="insurance" id="Medicare">
+    <label for ="Medicare">Medicare:</label>
+    <input type="radio" value="Uninsured" name="insurance" id="Uninsured">
+    <label for ="Uninsured">Uninsured:</label>
+    <input type="radio" value="Unknown" name="insurance" id="Unknown">
+    <label for ="Unknown">Unknown:</label><br/>
+
+  <label for ="dob">Estimated Delivery Date:</label>
+  <input type="delivery_date" id="delivery_date" name="delivery_date"><br/>
+
+  <label for ="gender" required>Patient aware of HepB+ status?</label>
+  <input type="radio" value="yes" name="yes" id="yes">
+  <label for ="yes">Yes:</label>
+  <input type="radio" value="no" name="no" id="no">
+  <label for ="no">No:</label>
+  <input type="radio" value="unknown" name="unknown" id="unknown">
+  <label for ="unknown">Unknown:</label><br/>
+
+  <label for ="hispanic" required>Hispanic:</label>
+  <input type="radio" value="yes" name="hispanic" id="yes">
+  <label for ="yes">Yes:</label>
+  <input type="radio" value="no" name="hispanic" id="no">
+  <label for ="no">No:</label>
+  <input type="radio" value="Unknown" name="hispanic" id="Unknown">
+  <label for ="Unknown">Unknown:</label><br>
+
+  <h2 style="border:1px solid black; width:80%; background-color:#000; color:#fff;">Laboratory Information</h2>
+  <label for ="lab">Laboratory Results: Check off below any POSITIVE labs and attach positive Hep B lab results</label>
+  <input type="checkbox" value="HBsAg" name="lab" id="HBsAg">
+  <label for ="HBsAg">HBsAg (Hep B surface antigen)</label>
+  <input type="checkbox" value="HBeAg" name="lab" id="HBeAg">
+  <label for ="HBeAg">HBeAg (Hep Be antigen)</label>
+  <input type="checkbox" value="IgM" name="lab" id="IgM">
+  <label for ="IgM">IgM anti-HBc (IgM antibody to Hep B core antigen)</label>
+  <input type="checkbox" value="HBV" name="lab" id="HBV">
+  <label for ="HBV">HBV DNA (Hep B virus DNA)</label><br/>
+  <label for="myfile">Attach Lab Report:</label>
+  <input type="file" id="myfile" name="myfile">
+
+  <h2 style="border:1px solid black; width:80%; background-color:#000; color:#fff;">Clinical Information:</h2>
+  <label for ="clinic_name">Name of Clinic:</label>
+  <input type="text" id="clinic_name" name="clinic_name" placeholder="Clinic name.."><br/>
+  <label for ="ob_firstname">OB Provider First Name::</label>
+  <input type="text" id="ob_firstname" name="ob_firstname" placeholder="First name.."><br/>
+  <label for ="ob_lastname">OB Provider Last Name::</label>
+  <input type="text" id="ob_lastname" name="ob_lastname" placeholder="Last name.."><br/>
+
+  <label for ="provider_type" required>Provider Type:</label>
+  <input type="radio" value="MD" name="provider_type" id="MD">
+  <label for ="MD">MD/DO</label>
+  <input type="radio" value="CNM" name="provider_type" id="CNM">
+  <label for ="CNM">CNM/NP</label>
+  <input type="radio" value="pa" name="provider_type" id="pa">
+  <label for ="pa">PA</label><br>
+
+  <label for="peraddress">Address:</label>
+  <textarea rows="2" cols="10" id="peraddress" name="peraddress"></textarea><br/>
+
+  <label for ="states">States:</label>
+  <input list="states" required>
+  <datalist id="states" name="states">
+  <option> [Select one] </option>
+  <option value="al">Alabama</option>
+  <option value="ak">Alaska</option>
+  <option value="az">Arizona</option>
+  <option value="ar">Arkansas</option>
+  <option value="ca">California</option>
+  <option value="co">Colorado</option>
+  <option value="ct">Connecticut</option>
+  <option value="de">Delaware</option>
+  <option value="fl">Florida</option>
+  <option value="ga">Georgia</option>
+  <option value="hi">Hawaii</option>
+  <option value="id">Idaho</option>
+  <option value="il">Illinois</option>
+  <option value="in">Indiana</option>
+  </datalist><br/>
+
+  <label for ="cities">Cities:</label>
+  <input list="cities" required>
+  <datalist id="cities" name="cities">
+  <option> [Select one] </option>
+  <option value="al">Alabama</option>
+  <option value="ak">Alaska</option>
+  <option value="az">Arizona</option>
+  <option value="ar">Arkansas</option>
+  <option value="ca">California</option>
+  <option value="co">Colorado</option>
+  <option value="ct">Connecticut</option>
+  <option value="de">Delaware</option>
+  <option value="fl">Florida</option>
+  <option value="ga">Georgia</option>
+  <option value="hi">Hawaii</option>
+  <option value="id">Idaho</option>
+  <option value="il">Illinois</option>
+  <option value="in">Indiana</option>
+  </datalist><br/>
+
+  <label for ="zipcode">Zip Code:</label>
+  <input type="text" name="zipcode" id="zipcode" maxlength="10" placeholder="Zip code.."><br/>
+  <label for ="expected_delivery">Expected Delivery Facility:</label>
+  <input type="text" id="expected_delivery" name="expected_delivery"><br/>
+  <label for ="reporting_facility">Reporting Health Care Facility:</label>
+  <input type="text" id="reporting_facility" name="reporting_facility"><br/>
+  <label for ="contact_person">Contact Person at Reporting Facility:</label>
+  <input type="text" id="contact_person" name="contact_person"><br/>
+  <label for ="contactnum">Direct Ph. Number:</label>
+  <input type="tel" name="contactnum" id="contactnum" placeholder="1234-567-8901" required><br/>
+  <label for ="dob">Date Form Completed:</label>
+  <input type="date_form" id="date_form" name="date_form"><br/>
+  <label for="lab_attachment">Positive Labs Attached:</label>
+  <input type="file" id="lab_attachment" name="lab_attachment">
+  </div>
+  <div class="div_submit">
+  <button type="submit" name="submit"> <a href="#" target="_self" style="text-decoration: none;">Submit</a> </button>
+  <button type="reset" name="reset"> Reset </button>
+  </fieldset>
+  </div><br>
+  </form>
+  </article>
+</article>
+</section>
+<section class="row">
+<article class="col-12">
+<footer>
+  <p>@aniruddhabaxi 2024</p>
+</footer>
+</article>
+</section>
+</body>
+</html>

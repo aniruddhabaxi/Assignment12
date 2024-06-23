@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta name="description" content="Dynamic web development">
+<meta name="author" content="Aniruddha">
+<meta name="viewport" content="width=device-width initial-scale=1.0">
+<link href="../css/style_assign13.css" rel="stylesheet" type="text/css">
+<title>Registration page</title>
+</head>
+<body>
+<header>
+<h2 style="padding-top:35px;">User registration Form</h2>
+</header>
+<section class="row">
+<nav class="nav_upper" class="col-12">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li style="margin-right:0px;"><a href="#">Login</a></li>
+  </ul>
+</nav>
+</section>
+<section class="row">
+<article class="col-12">
+  <fieldset>
+  <legend style="font-size:14px; font-weight:bold;">User registration Form</legend>
+  <form action="#" method="POST" autocomplete="off">
+  <div class="reg">
+<label for ="firstname">First name:</label>
+<input type="text" id="firstname" name="firstname" placeholder="First name.."><br/>
+<label for ="middlename">Middle name:</label>
+<input type="text" id="middlename" name="middlename" placeholder="Middle name.."><br/>
+<label for ="lastname">Last name:</label>
+<input type="text" id="lastname" name="lastname" placeholder="Last name.."><br/>
+<label for ="gender" required>Sex:</label>
+<input type="radio" value="female" name="sex" id="female">
+<label for ="female">Female:</label>
+<input type="radio" value="male" name="sex" id="male">
+<label for ="male">Male:</label>
+<input type="radio" value="other" name="sex" id="other">
+<label for ="other">Other:</label><br/>
+
+<label for="email"> Email ID: </label>
+<input type="email" name="email" id="email" placeholder="Email address.." required><br/>
+<label for ="contactnum">Contact Number:</label>
+<input type="tel" name="contactnum" id="contactnum" placeholder="1234-567-8901" required><br/>
+
+<label for ="year">Date of Birth:</label>
+<input type="year" id="year" name="year"><br/>
+<label for ="uniqueid">Driving License (Unique ID):</label>
+<input type="text" id="uniqueid" name="uniqueid" autofocus size="12" required><br/>
+<label for="sexorientation"> Sexual Orientation </label>
+<select id="sexorientation" name="sexorientation">
+<option selected disabled> [Select one] </option>
+<option value="Heterosexual">Heterosexual</option>
+<option value="Homosexual">Homosexual</option>
+<option value="Bisexual">Bisexual</option>
+<option value="Other">Other</option>
+</select><br/>
+<label for="sexorientation"> Gender Identity </label>
+<select id="gender_identity" name="gender_identity">
+<option selected disabled> [Select one] </option>
+<option value="Option 1">Option 1</option>
+<option value="Option 2">Option 2</option>
+<option value="Option 3">Option 3</option>
+<option value="Other">Other</option>
+</select><br/>
+<label for="password"> Password: </label>
+<input type="Password" name="Password" id="Password" required placeholder="*****" required><br/>
+<label for ="password">Re-enter password:</label>
+<input type="Password" name="Password" id="Password" placeholder="*****" required><br/>
+<div class="div_submit">
+<button type="submit" name="submit"> <a href="personal_info.html" style="text-decoration: none;">Submit</a> </button>
+<button type="reset" name="reset"> Reset </button>
+</fieldset>
+</div><br>
+</article>
+</section>
+<section class="row">
+<article class="col-12">
+<footer>
+  <p>@aniruddhabaxi 2024</p>
+</footer>
+</article>
+</section>
+</body>
+</html>

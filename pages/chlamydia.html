@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+<meta name="description" content="Dynamic web development">
+<meta name="author" content="Aniruddha">
+<meta name="viewport" content="width=device-width initial-scale=1.0">
+<link href="../css/style_assign13.css" rel="stylesheet" type="text/css">
+<title>Chlamydia & Gonorrhea</title>
+</head>
+<body>
+<header>
+<h2 style="padding-top:35px;"> Chlamydia & Gonorrhea case reporting</h2>
+</header>
+<section class="row">
+<nav class="nav_upper" class="col-12">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li style="margin-right:0px;"><a href="../index.html">Log out</a></li>
+  </ul>
+</nav>
+</section>
+<section class="row">
+  <nav class="col-3" id="side_nav">
+    <ul>
+      <li><a href="../pages/personal_info.html">Personal information</a></li>
+      <li><a href="../pages/riskfactor_info.html">Risk Factor Information</a></li>
+      <li><a href="../pages/hepititisb.html">Hepatitis B Pregnant Women Reporting</a></li>
+      <li><a href="../pages/cong_syp.html">Congenital Syphilis Form</a></li>
+      <li style="border-bottom: none;"><a href="#">Chlamydia & Gonorrhea case reporting</a></li>
+    </ul>
+  </nav>
+  <article class="col-9">
+    <fieldset>
+    <legend style="font-size:14px; font-weight:bold;">Clinic Information..</legend>
+    <form action="pages/personal_info.html" method="POST" autocomplete="off">
+    <div class="reg">
+      <label for ="clinic_name">Name of Clinic:</label>
+      <input type="text" id="clinic_name" name="clinic_name" placeholder="Clinic name.."><br/>
+      <label for ="Person_form">Person Completing Form:</label>
+      <input type="text" id="Person_form" name="Person_form" placeholder="Name of a person.."><br/>
+      <label for ="health_provider">Health Provider:</label>
+      <input type="text" id="health_provider" name="health_provider" placeholder="Health Provider.."><br/>
+      <label for ="date_clinic">Date :</label>
+      <input type="date" id="date_clinic" name="date_clinic"><br/>
+      <label for ="clinic_contact">Contact phone number/ fax:</label>
+      <input type="tel" name="clinic_contact" id="clinic_contact" placeholder="1234-567-8901" required><br/>
+    </div>
+   </form>
+ </fieldset>
+ <fieldset>
+ <legend style="font-size:14px; font-weight:bold;">Patient's Information..</legend>
+ <form action="patient_details.py" method="POST" autocomplete="off">
+ <div class="reg">
+   <label for ="patient_name">Name of Patient:</label>
+   <input type="text" id="patient_name" name="patient_name" placeholder="Clinic name.."><br/>
+   <label for ="gender" required>Gender:</label>
+   <input type="radio" value="female" name="sex" id="female">
+   <label for ="female">Female:</label>
+   <input type="radio" value="male" name="sex" id="male">
+   <label for ="male">Male:</label>
+   <input type="radio" value="other" name="sex" id="other">
+   <label for ="other">Other:</label><br/>
+   <label for ="patient_dob">Date of Birth :</label>
+   <input type="date" id="patient_dob" name="patient_dob"><br/>
+   <label for ="clinic_contact">Contact phone number/ fax:</label>
+   <input type="tel" name="clinic_contact" id="clinic_contact" placeholder="1234-567-8901" required><br/>
+   <label for ="unique_id">Driving License (Unique ID):</label>
+   <input type="text" id="unique_id" name="unique_id" autofocus size="12" required><br/>
+   <label for="patient_address">Residential Address:</label>
+   <textarea rows="2" cols="10" id="patient_address" name="patient_address"></textarea><br/>
+   <label for="patient_perm">Permanent Address:</label>
+   <textarea rows="2" cols="10" id="patient_perm" name="patient_perm"></textarea><br/>
+   <label for ="states">States:</label>
+   <input list="states" required>
+   <datalist id="states" name="states">
+   <option> [Select one] </option>
+   <option value="al">Alabama</option>
+   <option value="ak">Alaska</option>
+   <option value="az">Arizona</option>
+   <option value="ar">Arkansas</option>
+   <option value="ca">California</option>
+   <option value="co">Colorado</option>
+   <option value="ct">Connecticut</option>
+   <option value="de">Delaware</option>
+   <option value="fl">Florida</option>
+   <option value="ga">Georgia</option>
+   <option value="hi">Hawaii</option>
+   <option value="id">Idaho</option>
+   <option value="il">Illinois</option>
+   <option value="in">Indiana</option>
+   </datalist><br/>
+   <label for ="cities">Cities:</label>
+   <input list="cities" required>
+   <datalist id="cities" name="cities">
+   <option> [Select one] </option>
+   <option value="al">Alabama</option>
+   <option value="ak">Alaska</option>
+   <option value="az">Arizona</option>
+   <option value="ar">Arkansas</option>
+   <option value="ca">California</option>
+   <option value="co">Colorado</option>
+   <option value="ct">Connecticut</option>
+   <option value="de">Delaware</option>
+   <option value="fl">Florida</option>
+   <option value="ga">Georgia</option>
+   <option value="hi">Hawaii</option>
+   <option value="id">Idaho</option>
+   <option value="il">Illinois</option>
+   <option value="in">Indiana</option>
+   </datalist><br/>
+   <label for ="zipcode">Zip Code:</label>
+   <input type="text" name="zipcode" id="zipcode" maxlength="10" placeholder="Zip code.."><br/>
+   <label for ="gender" required>Ethnicity:</label>
+   <input type="radio" value="Hispanic" name="Hispanic" id="Hispanic">
+   <label for ="Hispanic">Hispanic:</label>
+   <input type="radio" value="Non_hispanic" name="Non_hispanic" id="Non_hispanic">
+   <label for ="Non_hispanic">Non-Hispanic:</label>
+   <input type="radio" value="Unknown" name="Unknown" id="Unknown">
+   <label for ="Unknown">Unknown:</label><br/>
+
+     <label for ="race">Race:</label>
+     <input list="race" required>
+     <datalist id="race" name="race">
+     <option> [Select one] </option>
+     <option value="American Indian">American Indian</option>
+     <option value="Pacific Islander">Pacific Islander</option>
+     <option value="Asian">Asian</option>
+     <option value="white">white</option>
+     <option value="Black">Black</option>
+     <option value="Unknown">Unknown</option>
+     <option value="Other">Other</option>
+     </datalist><br/>
+
+     <label for ="gender" required>Gender of Sex partner(s):</label>
+     <input type="radio" value="male_sex" name="male_sex" id="male_sex">
+     <label for ="male_sex">Male:</label>
+     <input type="radio" value="female_sex" name="female_sex" id="female_sex">
+     <label for ="female_sex">Female:</label>
+     <input type="radio" value="Un_known" name="Un_known" id="Un_known">
+     <label for ="Un_known">Unknown:</label><br/>
+
+   <label for ="test_result">Test result type:</label>
+     <input type="radio" value="Chlamydia" name="test_result" id="Chlamydia">
+     <label for ="Chlamydia">Chlamydia Positive Result</label>
+     <input type="radio" value="Gonorrhea" name="test_result" id="Gonorrhea">
+     <label for ="Gonorrhea">Gonorrhea Positive Result</label><br>
+     <label for ="test_date">Test result date:</label>
+     <input type="date" id="test_date" name="test_result"></br>
+
+     <label for ="reson_exam">Reason for exam:</label>
+       <input type="checkbox" value="Symptomatic" name="Symptomatic" id="Symptomatic">
+       <label for ="Symptomatic">Symptomatic</label>
+       <input type="checkbox" value="Routine Exam" name="Routine Exam" id="Routine Exam">
+       <label for ="Routine Exam">Routine Exam</label>
+       <input type="checkbox" value="Test for Cure" name="Test for Cure" id="Test for Cure">
+       <label for ="Test for Cure">Test for Cure</label>
+       <input type="checkbox" value="Exposed to Infection" name="Exposed to Infection" id="Exposed to Infection">
+       <label for ="Exposed to Infection">Test for Cure</label>
+       <input type="checkbox" value="Pregnant" name="Pregnant" id="Pregnant">
+       <label for ="Pregnant">Test for Cure</label>
+
+
+     <label for ="Diognosis">Diognosis:</label>
+     <input type="checkbox" value="Asymptomatic" name="Asymptomatic" id="Asymptomatic">
+     <label for ="Asymptomatic">Asymptomatic</label>
+     <input type="checkbox" value="Symptomatic-Uncomplicated" name="Symptomatic-Uncomplicated" id="Symptomatic-Uncomplicated">
+     <label for ="Symptomatic-Uncomplicated">Symptomatic-Uncomplicated</label>
+     <input type="checkbox" value="PID" name="PID" id="PID">
+     <label for ="PID">Pelvic Inflammatory Disease (PID)</label>
+     <input type="checkbox" value="Ophthalmia" name="Ophthalmia" id="Ophthalmia">
+     <label for ="Ophthalmia">Ophthalmia /conjunctivitis</label>
+     <input type="checkbox" value="Disseminated" name="Disseminated" id="Disseminated">
+     <label for ="Disseminated">Disseminated</label><br>
+
+
+
+
+     <label for ="Site">Site(s):</label>
+     <input type="checkbox" value="Cervix" name="Cervix" id="Cervix">
+     <label for ="Cervix">Cervix</label>
+     <input type="checkbox" value="Vaginal" name="Vaginal" id="Vaginal">
+     <label for ="Vaginal">Vaginal</label>
+     <input type="checkbox" value="Urethra" name="Urethra" id="Urethra">
+     <label for ="Urethra">Urethra</label>
+     <input type="checkbox" value="Rectum" name="Rectum" id="Rectum">
+     <label for ="Rectum">Rectum</label>
+     <input type="checkbox" value="Ocular" name="Ocular" id="Ocular">
+     <label for ="Ocular">Ocular</label>
+     <input type="checkbox" value="Urine" name="Urine" id="Urine">
+     <label for ="Urine">Urine</label>
+     <input type="checkbox" value="Pharynx" name="Pharynx" id="Pharynx">
+     <label for ="Pharynx">Pharynx</label>
+     <input type="checkbox" value="Other" name="Other" id="Other">
+     <label for ="Other">Other</label><br>
+     <div class="div_submit">
+     <button type="submit" name="submit"> Submit </button>
+     <button type="reset" name="reset"> Reset </button>
+   </div>
+ </div>
+</form>
+</fieldset>
+  </article>
+</section>
+<section class="row">
+<article class="col-12">
+<footer>
+  <p>@aniruddhabaxi 2024</p>
+</footer>
+</article>
+</section>
+</body>
+</html>
